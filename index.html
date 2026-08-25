@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civic Nationalist Centrism - A Comprehensive Ideological Framework</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        /* Navigation */
+        nav {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        nav h1 {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .hero .tagline {
+            font-style: italic;
+            color: #ffd700;
+            font-size: 1.1rem;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Main Content */
+        main {
+            background: white;
+            padding: 3rem 0;
+        }
+
+        /* Sections */
+        .section {
+            margin-bottom: 4rem;
+            padding: 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            margin-top: 2rem;
+        }
+
+        .section h2 {
+            color: #1e3c72;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 3px solid #2a5298;
+        }
+
+        .section h3 {
+            color: #2a5298;
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .section ul, .section ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .section li {
+            margin-bottom: 0.5rem;
+            line-height: 1.8;
+        }
+
+        /* Three Column Layout */
+        .three-columns {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .column-box {
+            background: linear-gradient(135deg, #f5f7fa 0%, #f0f4f8 100%);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #2a5298;
+        }
+
+        .column-box h4 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .column-box p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        /* Principles Section */
+        .principles {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .principle-card {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .principle-card:hover {
+            box-shadow: 0 8px 16px rgba(30, 60, 114, 0.2);
+            border-color: #2a5298;
+            transform: translateY(-5px);
+        }
+
+        .principle-card h4 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .principle-card p {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
+        /* Books Navigation */
+        .books-nav {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .book-item {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .book-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(30, 60, 114, 0.3);
+        }
+
+        .book-item h4 {
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .book-item p {
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+
+        /* Quote Section */
+        .quote-section {
+            background: linear-gradient(135deg, #f0f4f8 0%, #e8f0f7 100%);
+            border-left: 5px solid #2a5298;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 4px;
+            font-style: italic;
+            color: #1e3c72;
+        }
+
+        .quote-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* Core Pillars */
+        .pillars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .pillar {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #f5f7fa 0%, #f0f4f8 100%);
+            border-radius: 8px;
+            border-top: 4px solid #2a5298;
+        }
+
+        .pillar-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .pillar h3 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Tabs */
+        .tabs {
+            display: flex;
+            gap: 1rem;
+            margin: 2rem 0 1rem 0;
+            border-bottom: 2px solid #e0e0e0;
+            flex-wrap: wrap;
+        }
+
+        .tab-button {
+            background: none;
+            border: none;
+            padding: 1rem 1.5rem;
+            cursor: pointer;
+            font-size: 1rem;
+            color: #666;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .tab-button:hover {
+            color: #2a5298;
+        }
+
+        .tab-button.active {
+            color: #2a5298;
+            border-bottom-color: #2a5298;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+                font-size: 0.85rem;
+            }
+
+            nav h1 {
+                font-size: 1.2rem;
+            }
+
+            .section {
+                padding: 1.5rem;
+            }
+
+            .tabs {
+                flex-direction: column;
+            }
+
+            .tab-button {
+                text-align: left;
+                border-bottom: none;
+                border-left: 3px solid transparent;
+            }
+
+            .tab-button.active {
+                border-left-color: #2a5298;
+                border-bottom: none;
+            }
+        }
+
+        /* Comparison Table */
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .comparison-table th {
+            background: #1e3c72;
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .comparison-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .comparison-table tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+
+        .comparison-table tr:hover {
+            background: #f0f4f8;
+        }
+
+        /* Call to Action */
+        .cta {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .cta h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ffd700;
+            color: #1e3c72;
+            padding: 0.8rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            background: #ffed4e;
+            transform: scale(1.05);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #1e3c72;
+        }
+
+        .btn-secondary:hover {
+            background: #f0f0f0;
+        }
+
+        /* Toggle Content */
+        .expandable {
+            cursor: pointer;
+            background: #f5f7fa;
+            padding: 1rem;
+            border-radius: 4px;
+            margin: 1rem 0;
+            border-left: 4px solid #2a5298;
+            user-select: none;
+        }
+
+        .expandable:hover {
+            background: #eff3f8;
+        }
+
+        .expandable-content {
+            display: none;
+            margin-top: 1rem;
+            padding: 1rem;
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+        }
+
+        .expandable-content.show {
+            display: block;
+        }
+
+        .expand-icon {
+            float: right;
+            transition: transform 0.3s ease;
+        }
+
+        .expandable.open .expand-icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <h1>⚖️ Civic Nationalist Centrism</h1>
+            <ul>
+                <li><a href="#principles">Principles</a></li>
+                <li><a href="#philosophy">Philosophy</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#policies">Policies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <h1>Civic Nationalist Centrism</h1>
+            <p>A Comprehensive Ideological Framework for Democratic Governance</p>
+            <p class="tagline">"Balance is not weakness—it is the foundation of a functioning civilization."</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Introduction -->
+            <section class="section" id="principles">
+                <h2>Core Principles</h2>
+                <p>Civic Nationalist Centrism emerges not as a compromise between irreconcilable positions, but as a coherent philosophical and practical system rooted in elementary observations about human nature, social organization, and historical reality.</p>
+                
+                <div class="principles">
+                    <div class="principle-card">
+                        <h4>🏛️ Constitutional Democracy</h4>
+                        <p>Genuine democracy requires constitutional limits on even majority power, protection of individual rights, and the rule of law as the foundation of legitimate governance.</p>
+                    </div>
+                    <div class="principle-card">
+                        <h4>📊 Mixed Economy</h4>
+                        <p>Markets are powerful engines of innovation and prosperity, yet require intelligent governance and strong public institutions to prevent exploitation and ensure basic dignity.</p>
+                    </div>
+                    <div class="principle-card">
+                        <h4>🇳🇦 Civic Nationalism</h4>
+                        <p>Nations are legitimate communities of citizens bound by shared constitutional values, democratic institutions, and mutual commitment—not ethnic or religious essentialist projects.</p>
+                    </div>
+                    <div class="principle-card">
+                        <h4>⚖️ Proportional Balance</h4>
+                        <p>Sound governance requires understanding when each competing good is most urgently needed, how they constrain one another, and how their balanced integration serves human flourishing.</p>
+                    </div>
+                    <div class="principle-card">
+                        <h4>👥 Layered Community</h4>
+                        <p>Humans exist in nested layers of community—family, local, national, global—each serving genuine purposes and requiring protection from improper intrusion by higher layers.</p>
+                    </div>
+                    <div class="principle-card">
+                        <h4>📈 Pragmatic Reform</h4>
+                        <p>Change requires experimentation, evidence-based evaluation, and perpetual adjustment—not revolutionary rupture or ideological dogmatism.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Core Pillars -->
+            <section class="section" id="philosophy">
+                <h2>Four Pillars of Centrist Philosophy</h2>
+                
+                <div class="pillars">
+                    <div class="pillar">
+                        <div class="pillar-icon">🧠</div>
+                        <h3>Proportional Realism</h3>
+                        <p>Recognition that human societies require simultaneously multiple things that exist in genuine tension: liberty and solidarity, markets and regulation, equality before law and equality of opportunity.</p>
+                    </div>
+                    <div class="pillar">
+                        <div class="pillar-icon">👨‍👩‍👧‍👦</div>
+                        <h3>Anthropological Accuracy</h3>
+                        <p>Humans are simultaneously self-interested and social; rational and passionate; individual and communal. We are neither blank slates nor isolated calculators, but beings requiring both autonomy and belonging.</p>
+                    </div>
+                    <div class="pillar">
+                        <div class="pillar-icon">⚖️</div>
+                        <h3>Institutional Wisdom</h3>
+                        <p>Well-designed institutions constrain power, distribute authority appropriately, maintain accountability, and protect the domains of human life that should remain outside market logic or state control.</p>
+                    </div>
+                    <div class="pillar">
+                        <div class="pillar-icon">🌍</div>
+                        <h3>Strategic Pragmatism</h3>
+                        <p>Nations pursue legitimate national interests through reasoned judgment and evidence-based policy, while maintaining international cooperation, respecting universal human rights, and exercising restraint in power.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- The Failure of Extremes -->
+            <section class="section">
+                <h2>Why Ideological Extremism Fails</h2>
+                
+                <div class="tabs">
+                    <button class="tab-button active" onclick="switchTab(event, 'left')">The Radical Left</button>
+                    <button class="tab-button" onclick="switchTab(event, 'right')">The Radical Right</button>
+                    <button class="tab-button" onclick="switchTab(event, 'center')">The Centrist Alternative</button>
+                </div>
+
+                <div id="left" class="tab-content active">
+                    <h3>The Radical Left: Economic Determinism & Revolution</h3>
+                    <p><strong>Core Insights (Valid):</strong></p>
+                    <ul>
+                        <li>Economic power shapes political power</li>
+                        <li>Concentrated wealth can corrupt democracy</li>
+                        <li>Exploitative class relationships are real and cause suffering</li>
+                        <li>Existing systems can be fundamentally reformed</li>
+                    </ul>
+                    <p><strong>Catastrophic Errors:</strong></p>
+                    <ul>
+                        <li>Insists that economic relations alone determine all human social organization</li>
+                        <li>Commits to revolutionary violence as historically necessary</li>
+                        <li>Views existing order as irredeemable without complete rupture</li>
+                        <li>Produces totalitarian regimes (Soviet Union, Maoist China, Cambodia) that generate mass suffering</li>
+                    </ul>
+                    <p class="quote-section">The twentieth century's socialist regimes failed not despite their commitment to Marxist theory; they failed precisely because of it, and their failures were written in mass graves.</p>
+                </div>
+
+                <div id="right" class="tab-content">
+                    <h3>The Radical Right: Ethnic Nationalism & Hierarchy</h3>
+                    <p><strong>Core Insights (Valid):</strong></p>
+                    <ul>
+                        <li>National identity and culture matter to human beings</li>
+                        <li>Communities require continuity and shared practices</li>
+                        <li>Some forms of localism and decentralization improve governance</li>
+                        <li>Nations have legitimate interests distinct from other nations</li>
+                    </ul>
+                    <p><strong>Catastrophic Errors:</strong></p>
+                    <ul>
+                        <li>Grounds nationalism in ethnic or religious essentialism rather than civic commitment</li>
+                        <li>Justifies subordination and elimination of those deemed not to belong</li>
+                        <li>Embraces violence as an end in itself and tool of ideology</li>
+                        <li>Produces fascist regimes (Nazi Germany) that conduct genocide and unleash world wars</li>
+                    </ul>
+                    <p class="quote-section">The Nazi ideology was different in content from Stalinist ideology, but it was identical in structure: the conviction that reality must conform to theory and those who disagree either suffer from false consciousness or represent enemies to be eliminated.</p>
+                </div>
+
+                <div id="center" class="tab-content">
+                    <h3>The Centrist Synthesis: Balance & Institutional Wisdom</h3>
+                    <p><strong>Accepts Valid Insights From Both:</strong></p>
+                    <ul>
+                        <li>Economic power matters, AND identity and culture matter</li>
+                        <li>Reform is possible, AND revolutionary rupture produces catastrophe</li>
+                        <li>National interest is legitimate, AND ethnic nationalism is destructive</li>
+                        <li>Markets are powerful, AND they require intelligent constraint</li>
+                    </ul>
+                    <p><strong>Rejects Extremist Pathology:</strong></p>
+                    <ul>
+                        <li>Refuses to reduce reality to a single determining principle</li>
+                        <li>Maintains constitutional limits on all power, whether democratic, market, or national</li>
+                        <li>Balances competing goods rather than pursuing any single value to its destructive extreme</li>
+                        <li>Achieves unprecedented prosperity and dignity through mixed economy and liberal democracy</li>
+                    </ul>
+                    <p class="quote-section">The centrist position is stronger than either extreme precisely because it can acknowledge what is genuinely true in its critics while maintaining a coherent framework that neither extreme can match.</p>
+                </div>
+            </section>
+
+            <!-- Economic Framework -->
+            <section class="section">
+                <h2>Centrist Economics: The Mixed Economy</h2>
+                
+                <div class="quote-section">
+                    <p>"Markets are extraordinarily valuable and extraordinarily limited. They are valuable because they solve the coordination problem of complex economies. Yet markets are limited because they cannot produce justice, ensure basic human needs are met, or protect against market failures."</p>
+                </div>
+
+                <h3>Market Strengths (Utilize Vigorously)</h3>
+                <ul>
+                    <li><strong>Decentralized Coordination:</strong> Price signals allow millions of individuals to coordinate without central planning</li>
+                    <li><strong>Innovation:</strong> Competition generates incentives for continuous improvement and new solutions</li>
+                    <li><strong>Efficiency:</strong> Markets allocate resources to their highest-value uses</li>
+                    <li><strong>Dynamic Growth:</strong> Entrepreneurship and capital formation drive economic expansion</li>
+                    <li><strong>Consumer Sovereignty:</strong> Individual choice shapes production rather than bureaucratic mandate</li>
+                </ul>
+
+                <h3>Market Failures (Constrain Intelligently)</h3>
+                <ul>
+                    <li><strong>Exploitation:</strong> Power imbalances allow firms to extract monopoly rents and exploit desperate workers</li>
+                    <li><strong>Externalities:</strong> Environmental destruction, pollution, and other costs are not captured by markets</li>
+                    <li><strong>Public Goods:</strong> National defense, basic research, and infrastructure are underprovided by markets</li>
+                    <li><strong>Information Asymmetries:</strong> Consumers and workers often lack knowledge to make free choices</li>
+                    <li><strong>Concentration:</strong> Large firms accumulate market power that undermines competition and democracy</li>
+                </ul>
+
+                <h3>The Centrist Solution: Smart Governance</h3>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Domain</th>
+                            <th>Centrist Approach</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Private Property & Markets</strong></td>
+                            <td>Protect rigorously; primary mechanism for organizing production and exchange</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Taxation & Public Goods</strong></td>
+                            <td>Progressive taxation funds public goods and investment in citizen capacity</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Antitrust & Competition</strong></td>
+                            <td>Vigorous enforcement prevents monopoly power from undermining markets or democracy</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Labor Protection</strong></td>
+                            <td>Minimum wages, workplace safety, union rights, combined with labor market flexibility</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Environmental Regulation</strong></td>
+                            <td>Internalize externalities through carbon pricing and strict pollution controls</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Public Investment</strong></td>
+                            <td>Long-term strategic investment in research, infrastructure, and human capital</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Political Institutions -->
+            <section class="section">
+                <h2>Institutions of a Centrist Republic</h2>
+                
+                <h3>Constitutional Liberal Democracy</h3>
+                <p>The only form of government that has proven capable of limiting power and protecting human dignity:</p>
+
+                <div class="three-columns">
+                    <div class="column-box">
+                        <h4>Equality Before Law</h4>
+                        <p>All citizens possess equal standing in the political community. Law applies equally regardless of wealth, power, religion, or status. No person is by nature superior to any other.</p>
+                    </div>
+                    <div class="column-box">
+                        <h4>Democratic Accountability</h4>
+                        <p>Regular competitive elections allow citizens to hold power-holders accountable. Those who govern must win the consent of the governed, and losing power means relinquishing it.</p>
+                    </div>
+                    <div class="column-box">
+                        <h4>Rule of Law</h4>
+                        <p>Power exercised only according to established legal procedures that are public and knowable. No one, not even government leaders, stands above the law or immune from legal accountability.</p>
+                    </div>
+                </div>
+
+                <h3>Separation and Balance of Powers</h3>
+                <p>The centrist republic maintains distinct branches of government that check and balance one another:</p>
+
+                <div class="expandable" onclick="toggleExpandable(this)">
+                    <strong>Legislative Branch: The Democratic Voice <span class="expand-icon">▼</span></strong>
+                    <div class="expandable-content">
+                        <p>Directly elected representatives accountable to citizens. Passes laws, controls taxation, declares war, and exercises oversight of executive branch. Subject to constitutional constraints that protect rights even against majority preference.</p>
+                    </div>
+                </div>
+
+                <div class="expandable" onclick="toggleExpandable(this)">
+                    <strong>Executive Branch: The Administrative Power <span class="expand-icon">▼</span></strong>
+                    <div class="expandable-content">
+                        <p>Enforces laws, commands military and police, conducts foreign policy. Must be constrained by constitutional limits, democratic accountability, and inability to exercise power arbitrarily. Cannot bypass legislative authority except in genuine emergency.</p>
+                    </div>
+                </div>
+
+                <div class="expandable" onclick="toggleExpandable(this)">
+                    <strong>Judicial Branch: The Law's Guardian <span class="expand-icon">▼</span></strong>
+                    <div class="expandable-content">
+                        <p>Interprets law and constitutionality. Must be independent from political pressure and majoritarian passion. Protects individual rights and minority interests even against popular preference. Subject to constitutional and legal limits rather than political whim.</p>
+                    </div>
+                </div>
+
+                <h3>Federalism: Distributed Authority</h3>
+                <p>Power distributed across multiple levels of government according to principles of subsidiarity: decisions made at the most local level capable of making them effectively, reserving higher levels for matters requiring coordination or uniform standards.</p>
+            </section>
+
+            <!-- The Five Books -->
+            <section class="section" id="books">
+                <h2>The Comprehensive Framework: Five Books</h2>
+                <p>Civic Nationalist Centrism is structured as a comprehensive ideological framework across five books:</p>
+                
+                <div class="books-nav">
+                    <div class="book-item">
+                        <h4>📖 Book I: Foundations</h4>
+                        <p>Crisis of extremism, philosophical anthropology, failure of radical left and right, and the case for centrist economics.</p>
+                    </div>
+                    <div class="book-item">
+                        <h4>🏛️ Book II: Institutions</h4>
+                        <p>Democracy and rule of law, public sector capacity, labor and welfare, education and civic identity.</p>
+                    </div>
+                    <div class="book-item">
+                        <h4>🌍 Book III: National Interest</h4>
+                        <p>Civic nationalism and national self-determination, foreign policy in multipolar world, immigration and demographic change.</p>
+                    </div>
+                    <div class="book-item">
+                        <h4>🔮 Book IV: The Future</h4>
+                        <p>Sustainability and climate change, resistance to ideological pathology, institutional renewal for modern challenges.</p>
+                    </div>
+                    <div class="book-item">
+                        <h4>⚖️ Book V: Justice & Governance</h4>
+                        <p>Crime and criminal justice, federalism and decentralization, science and infrastructure, civilizational stakes of centrism.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Policy Positions -->
+            <section class="section" id="policies">
+                <h2>Key Policy Positions</h2>
+
+                <h3>Economics & Markets</h3>
+                <div class="three-columns">
+                    <div class="column-box">
+                        <h4>✅ Support</h4>
+                        <ul style="text-align: left; margin-left: 0;">
+                            <li>Competitive markets</li>
+                            <li>Private property rights</li>
+                            <li>Entrepreneurship</li>
+                            <li>Innovation incentives</li>
+                        </ul>
+                    </div>
+                    <div class="column-box">
+                        <h4>⚖️ Regulate</h4>
+                        <ul style="text-align: left; margin-left: 0;">
+                            <li>Monopoly power</li>
+                            <li>Environmental externalities</li>
+                            <li>Financial stability</li>
+                            <li>Consumer fraud</li>
+                        </ul>
+                    </div>
+                    <div class="column-box">
+                        <h4>🏛️ Provide Publicly</h4>
+                        <ul style="text-align: left; margin-left: 0;">
+                            <li>Education & research</li>
+                            <li>Infrastructure</li>
+                            <li>Basic safety net</li>
+                            <li>Public health</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <h3>Labor & Welfare</h3>
+                <ul>
+                    <li><strong>Labor Protections:</strong> Minimum wage, workplace safety, union rights, and protection against arbitrary dismissal—combined with labor market flexibility for employment growth</li>
+                    <li><strong>Safety Net:</strong> Universal basic income, health care access, education, and sufficient security to maintain dignity—combined with incentives and requirements for work</li>
+                    <li><strong>Health Care:</strong> Universal coverage through public funding, combined with both public provision and regulated private markets for innovation and competition</li>
+                </ul>
+
+                <h3>Governance & Democracy</h3>
+                <ul>
+                    <li><strong>Anti-Corruption:</strong> Transparent procurement, disclosure requirements, independent auditing, whistleblower protection, vigorous prosecution of corruption</li>
+                    <li><strong>Civil Service:</strong> Merit-based appointment and advancement, professional standards, insulation from political patronage</li>
+                    <li><strong>Institutional Independence:</strong> Courts free from political interference, regulators independent from industries they regulate, military subordinate to civilian authority</li>
+                </ul>
+
+                <h3>National & Foreign Policy</h3>
+                <ul>
+                    <li><strong>National Interest:</strong> Nations have legitimate right to pursue distinct interests, maintain culture, and determine immigration and naturalization policy</li>
+                    <li><strong>Restraint in Force:</strong> Military intervention only in genuine necessity (defense, humanitarian catastrophe, vital interests); no regime change wars or efforts to spread democracy</li>
+                    <li><strong>International Cooperation:</strong> Support for international institutions, free trade, and diplomatic engagement, while respecting national sovereignty</li>
+                    <li><strong>Immigration:</strong> Controlled but significant immigration with pathways to citizenship; humanitarian obligations to refugees; balanced against social integration concerns</li>
+                </ul>
+
+                <h3>Culture & Education</h3>
+                <ul>
+                    <li><strong>Public Education:</strong> Generously funded and high-quality for all students; broad development beyond job training; transmission of cultural knowledge and civic values</li>
+                    <li><strong>Civic Education:</strong> Teaching of national history (achievements and failures), constitutional principles, skills of democratic deliberation</li>
+                    <li><strong>Cultural Pluralism:</strong> Protection of diverse traditions and practices within constitutional framework; rejection of cultural imperialism while maintaining public standards</li>
+                </ul>
+
+                <h3>Environment & Sustainability</h3>
+                <ul>
+                    <li><strong>Climate Action:</strong> Aggressive investment in renewable energy and efficiency; carbon pricing; support for technological innovation; realistic timelines that account for economic adjustment</li>
+                    <li><strong>Environmental Protection:</strong> Enforcement of pollution standards, protection of common resources, preservation of natural systems—balanced against economic functionality</li>
+                    <li><strong>Adaptation:</strong> Preparation for climate impacts that cannot be prevented; investment in resilience and technological solutions</li>
+                </ul>
+            </section>
+
+            <!-- Challenges to Centrism -->
+            <section class="section">
+                <h2>Challenges to Centrist Philosophy</h2>
+                
+                <h3>The Passion Problem</h3>
+                <p>Centrist philosophy lacks the passionate certainty that attracts followers to ideological extremes. It cannot promise that all conflict will be resolved, that perfect justice will be achieved, or that history marches toward a predetermined endpoint. Instead, it promises only that through wisdom and restraint, human beings can create societies in which flourishing is possible and catastrophe is avoidable.</p>
+
+                <h3>The Information Ecosystem Problem</h3>
+                <p>Contemporary social media creates filter bubbles and algorithmic recommendation systems that show people ever more extreme versions of views they already hold. Tribal identities form, and genuine democratic deliberation across divides becomes nearly impossible. The centrist must develop media literacy education and support institutions that reward accuracy and nuance.</p>
+
+                <h3>The Disruption Problem</h3>
+                <p>Artificial intelligence, automation, and technological change are creating unprecedented economic disruption. The job security and stable middle-class employment that undergirded postwar centrist societies is eroding. Centrist policies must address economic displacement while maintaining both market dynamism and possibilities for dignified employment.</p>
+
+                <h3>The Polarization Problem</h3>
+                <p>Political polarization has intensified, making compromise increasingly difficult. Each side views the other not as a legitimate participant in democratic life but as an enemy whose defeat is essential. The centrist must resist this tribalism while acknowledging that authoritarian threats sometimes require firmer opposition than standard political disagreement.</p>
+            </section>
+
+            <!-- Why Centrism Matters -->
+            <section class="section">
+                <h2>Why Civic Nationalist Centrism Matters</h2>
+                
+                <div class="quote-section">
+                    <p>"The stakes of centrist political philosophy are nothing less than the survival and flourishing of human civilization. The twentieth century demonstrated that ideological extremism, pursued with totalizing commitment, can generate catastrophes on a scale that previous centuries never achieved."</p>
+                </div>
+
+                <h3>The Historical Lesson</h3>
+                <p>The twentieth century wrote a lesson in blood: ideological absolutism from both left and right generated totalizing systems that subordinated all human life to dogmatic purposes. Communist regimes killed more than one hundred million people through famine, purge, and political upheaval. Fascist regimes conducted genocide and initiated world wars. The common denominator was not their economic or cultural content, but their fundamental structure: the belief that reality must conform to theory, that human societies must be remade according to abstract blueprints, and that those who disagree represent enemies to be eliminated.</p>
+
+                <h3>The Contemporary Crisis</h3>
+                <p>The contemporary moment presents challenges that demand centrist wisdom:</p>
+                <ul>
+                    <li>Climate change approaches irreversibility, yet the most utopian responses are politically impossible</li>
+                    <li>Artificial intelligence poses unprecedented risks and opportunities that no orthodoxy adequately addresses</li>
+                    <li>Authoritarian regimes challenge the liberal democratic international order</li>
+                    <li>Mass migration and demographic change reshape societies</li>
+                    <li>Religious and cultural polarization fragments assumed progress toward secular modernity</li>
+                    <li>Economic disruption threatens the employment and dignity that centrist societies promised</li>
+                </ul>
+
+                <h3>The Centrist Solution</h3>
+                <p>These challenges demand that centrist philosophy move beyond defensive posturing and develop positive visions:</p>
+                <ul>
+                    <li>Economic policies that address disruption while maintaining market dynamism and employment dignity</li>
+                    <li>Immigration and cultural integration policies that preserve social cohesion while remaining open to diversity</li>
+                    <li>Environmental policies that address climate change while maintaining functioning modern economies</li>
+                    <li>Foreign policies that defend democratic civilization while maintaining restraint and respect for self-determination</li>
+                </ul>
+
+                <h3>The Path Forward</h3>
+                <p>The future of human civilization may depend on whether sufficient numbers of people recognize that genuine wisdom consists not in passionate commitment to ideological purity, but in:</p>
+                <ul>
+                    <li>The disciplined balance of competing goods</li>
+                    <li>The perpetual adjustment of means to achieve worthy ends</li>
+                    <li>The humble recognition that governance is an art of proportion rather than a mathematical proof</li>
+                    <li>The commitment to constitutional limits on all power</li>
+                    <li>The willingness to accept partial achievements and to learn from failure</li>
+                </ul>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="cta">
+                <h3>Join the Centrist Movement</h3>
+                <p>The future of democratic civilization requires committed citizens willing to resist ideological extremism and pursue the balanced, pragmatic governance that centrism offers.</p>
+                <button class="btn" onclick="document.getElementById('contact').scrollIntoView();">Get Involved</button>
+            </section>
+
+            <!-- Contact & Resources -->
+            <section class="section" id="contact">
+                <h2>Resources & Further Reading</h2>
+                
+                <h3>Core Texts</h3>
+                <p><em>Civic Nationalist Centrism: A Comprehensive Ideological Framework</em> is structured in five books covering foundations, institutions, national interest, future challenges, and justice systems.</p>
+
+                <h3>Key Concepts to Explore</h3>
+                <ul>
+                    <li><strong>Constitutional Liberal Democracy:</strong> How to balance democratic responsiveness with protection of individual rights and rule of law</li>
+                    <li><strong>Mixed Economy:</strong> How to leverage market strengths while constraining market failures through intelligent governance</li>
+                    <li><strong>Civic Nationalism:</strong> How to maintain national identity based on shared democratic values rather than ethnic or religious essentialism</li>
+                    <li><strong>Proportional Realism:</strong> How to recognize and balance the competing goods that all functional societies require simultaneously</li>
+                    <li><strong>Institutional Design:</strong> How to create systems that distribute power appropriately and maintain accountability</li>
+                </ul>
+
+                <div class="cta" style="margin-top: 2rem;">
+                    <h3>Questions or Feedback?</h3>
+                    <p>This ideology is presented as a comprehensive philosophical framework. We welcome serious engagement with its arguments and challenges to its positions.</p>
+                    <button class="btn">Contact Us</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Civic Nationalist Centrism Framework</p>
+        <p><em>"The centrist recognizes that genuine wisdom consists not in passionate commitment to ideological purity, but in the disciplined balance of competing goods and the humble acknowledgment that governance is an art of proportion rather than a mathematical proof."</em></p>
+        <p style="margin-top: 1rem; opacity: 0.8;">A Comprehensive Ideological Framework for Democratic Governance</p>
+    </footer>
+
+    <script>
+        // Tab switching functionality
+        function switchTab(evt, tabName) {
+            // Hide all tab contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('active'));
+            
+            // Remove active class from all buttons
+            const buttons = document.querySelectorAll('.tab-button');
+            buttons.forEach(button => button.classList.remove('active'));
+            
+            // Show the current tab
+            document.getElementById(tabName).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+
+        // Expandable content functionality
+        function toggleExpandable(element) {
+            element.classList.toggle('open');
+            const content = element.querySelector('.expandable-content');
+            content.classList.toggle('show');
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll-to-top functionality
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+            } else {
+                nav.style.boxShadow = '0 2px 5px rgba(0,0,0,0.1)';
+            }
+        });
+    </script>
+</body>
+</html>
